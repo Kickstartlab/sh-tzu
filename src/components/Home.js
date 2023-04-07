@@ -84,9 +84,9 @@ export default function Home() {
 
                         </div>
 
-                        <div data-aos='zoom-in' className="lg:w-1/2 relative">
-                            <img src={pattern} alt='' className='w-9/12 lg:float-right lg:block hidden'></img>
-                            <img src={top} alt='' className='w-9/12 lg:float-right lg:block flex mx-auto lg:absolute right-14 lg:-mt-32'></img>
+                        <div className="lg:w-1/2 relative">
+                            <img data-aos='fade-up' src={pattern} alt='' className='w-9/12 lg:float-right lg:block hidden'></img>
+                            <img data-aos='zoom-in' src={top} alt='' className='w-9/12 lg:float-right lg:block flex mx-auto lg:absolute right-14 lg:-mt-32'></img>
                         </div>
                     </div>
 
@@ -113,8 +113,8 @@ export default function Home() {
 
                         <div className="lg:flex items-center justify-between md:mt-0 mt-12 gap-x-12 lg:space-y-0 space-y-6">
                             <div className='flex items-center gap-x-6'>
-                                <img src={f_1} alt='' className=''></img>
-                                <div>
+                                <img data-aos='zoom-in' src={f_1} alt='' className=''></img>
+                                <div data-aos='fade-up'>
                                     <h3 className='md:text-3xl text-xl font-semibold text-black-100'>
                                         Lorem Ipsum
                                     </h3>
@@ -126,8 +126,8 @@ export default function Home() {
                             </div>
 
                             <div className='flex items-center gap-x-6'>
-                                <img src={f_2} alt='' className=''></img>
-                                <div>
+                                <img data-aos='zoom-in' src={f_2} alt='' className=''></img>
+                                <div data-aos='fade-up'>
                                     <h3 className='md:text-3xl text-xl font-semibold text-black-100'>
                                         Lorem Ipsum
                                     </h3>
@@ -169,7 +169,7 @@ export default function Home() {
 
                     <div className='grid lg:grid-cols-3 grid-cols-1 items-center gap-12'>
 
-                        <div className='space-y-6'>
+                        <div data-aos='flip-right' className='space-y-6'>
                             <img src={ab_1} alt="Logo" className='' />
 
                             <h5 className='md:text-2xl text-lg font-semibold text-black-100'>
@@ -183,7 +183,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className='space-y-6 bg-blue-100 text-white-100 p-6'>
+                        <div data-aos='flip-right' className='space-y-6 bg-blue-100 text-white-100 p-6'>
                             <img src={ab_2} alt="Logo" className='' />
 
                             <h5 className='md:text-2xl text-lg font-semibold'>
@@ -197,7 +197,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className='space-y-6'>
+                        <div data-aos='flip-right' className='space-y-6'>
                             <img src={ab_3} alt="Logo" className='' />
 
                             <h5 className='md:text-2xl text-lg font-semibold text-black-100'>
@@ -223,7 +223,7 @@ export default function Home() {
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
                     <div className="lg:flex block justify-center items-center gap-x-16 py-16">
 
-                        <div data-aos="fade-right" className="lg:w-1/3">
+                        <div data-aos="zoom-in" className="lg:w-1/3">
                             <img src={work} alt="Logo" className='lg:w-full w-8/12 flex mx-auto' />
                         </div>
 
@@ -470,10 +470,10 @@ export default function Home() {
 
                 <div className='flex items-center justify-center gap-8 flex-wrap lg:mt-12 mt-6'>
 
-                    <img src={p_1} alt="Logo" className='' />
-                    <img src={p_2} alt="Logo" className='' />
-                    <img src={p_3} alt="Logo" className='' />
-                    <img src={p_4} alt="Logo" className='' />
+                    <img data-aos='zoom-in' src={p_1} alt="Logo" className='' />
+                    <img data-aos='zoom-in' src={p_2} alt="Logo" className='' />
+                    <img data-aos='zoom-in' src={p_3} alt="Logo" className='' />
+                    <img data-aos='zoom-in' src={p_4} alt="Logo" className='' />
 
                 </div>
             </div>
