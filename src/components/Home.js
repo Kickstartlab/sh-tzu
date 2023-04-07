@@ -113,7 +113,7 @@ export default function Home() {
 
                         <div className="lg:flex items-center justify-between md:mt-0 mt-12 gap-x-12 lg:space-y-0 space-y-6">
                             <div className='flex items-center gap-x-6'>
-                                <img data-aos='zoom-in' src={f_1} alt='' className=''></img>
+                                <img data-aos='zoom-in' src={f_1} alt='' className='rotate'></img>
                                 <div data-aos='fade-up'>
                                     <h3 className='md:text-3xl text-xl font-semibold text-black-100'>
                                         Lorem Ipsum
@@ -126,7 +126,7 @@ export default function Home() {
                             </div>
 
                             <div className='flex items-center gap-x-6'>
-                                <img data-aos='zoom-in' src={f_2} alt='' className=''></img>
+                                <img data-aos='zoom-in' src={f_2} alt='' className='rotate'></img>
                                 <div data-aos='fade-up'>
                                     <h3 className='md:text-3xl text-xl font-semibold text-black-100'>
                                         Lorem Ipsum
