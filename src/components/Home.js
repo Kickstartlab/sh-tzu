@@ -84,7 +84,7 @@ export default function Home() {
 
                         </div>
 
-                        <div className="lg:w-1/2 relative">
+                        <div className="lg:w-1/2 relative pt-8">
                             <img data-aos='fade-up' src={pattern} alt='' className='w-9/12 lg:float-right lg:block hidden'></img>
                             <img data-aos='zoom-in' src={top} alt='' className='w-9/12 lg:float-right lg:block flex mx-auto lg:absolute right-14 lg:-mt-32'></img>
                         </div>
