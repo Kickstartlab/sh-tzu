@@ -75,10 +75,10 @@ export default function Home() {
                             </p>
 
                             <div className="mt-6 py-2 pl-6 pr-1 lg:w-8/12 bg-pink-50 flex items-center justify-between rounded-2xl border-2 border-blue-25">
-                                <input type="email" placeholder="Enter your email" id="email" required="" className="focus:ring-0 focus:outline-none w-full bg-pink-50" />
+                                <input type="email" placeholder="Enter your email address" id="email" required="" className="focus:ring-0 focus:outline-none w-full bg-pink-50 placeholder:text-black-100" />
 
                                 <button className='text-white-100 lg:px-5 px-2 lg:py-3 py-2 bg-blue-25 rounded-2xl'>
-                                    Subcribe
+                                    Submit
                                 </button>
                             </div>
 
