@@ -259,7 +259,7 @@ export default function Home() {
 
                 <div className='lg:flex items-center justify-between gap-8 space-y-4 pt-12'>
 
-                    <div className='space-y-8'>
+                    <div data-aos='fade-right' className='space-y-8'>
 
                         <div>
                             <p className='text-lg pb-2'>
@@ -284,11 +284,11 @@ export default function Home() {
 
                     </div>
 
-                    <div>
+                    <div data-aos='zoom-in'>
                         <img src={token} alt="Logo" className='' />
                     </div>
 
-                    <div className='space-y-8'>
+                    <div  data-aos='fade-left' className='space-y-8'>
 
                         <div>
                             <p className='text-lg pb-2 lg:text-right'>

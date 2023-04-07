@@ -8,8 +8,6 @@ export default function Footer() {
     <div className="font-montserat py-5">
       <footer data-aos="zoom-in" className='container text-black-100 mx-auto lg:px-20 font-montserat px-5'>
 
-        <hr className='pb-12 text-black-100'></hr>
-
         <div className="flex flex-col items-center justify-center gap-y-8 mx-auto">
 
           <h2 data-aos='fade-up' className='md:text-4xl text-2xl font-montserat font-bold text-black-100'>
