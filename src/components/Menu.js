@@ -23,7 +23,7 @@ export default function Menu() {
             <li><a href="#about" className="font-semibold">About us</a></li>
             <li><a href="#roadmap" className="font-semibold">Roadmap</a></li>
             <li><a href="#faq" className="font-semibold">FAQ</a></li>
-            <li><a href="/" className="font-semibold">Contact</a></li>
+            <li><a href="#contact" className="font-semibold">Contact</a></li>
           </ul>
         </nav>
 
@@ -69,7 +69,7 @@ export default function Menu() {
             <a href="#faq" className="text-lg ml-4 font-semibold">FAQ</a>
           </button>
           <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300">
-            <a href="/" className="text-lg ml-4 font-semibold">Contact</a>
+            <a href="#contact" className="text-lg ml-4 font-semibold">Contact</a>
           </button>
           <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-black-100 bg-white-100">
             <a href="/" className="text-lg ml-4 font-semibold">Join Us</a>

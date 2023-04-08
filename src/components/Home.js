@@ -98,7 +98,7 @@ export default function Home() {
 
             {/* about us section */}
 
-            <div id='about' className="lg:px-20 px-5">
+            <div className="lg:px-20 px-5">
                 <div className='container mx-auto'>
 
                     <div className="lg:flex block justify-between items-center gap-x-16 lg:py-16">
@@ -134,9 +134,6 @@ export default function Home() {
                             <p className='text-white-50'>
                                 Convert your messages into unique NFTs with our Text to NFT Bot. Express yourself through blockchain technology and turn your words into digital art that can be traded on the blockchain.
                             </p>
-                            <div>
-                                <a href='/' className='text-blue-100 font-semibold'>Read More ➔</a>
-                            </div>
                         </div>
 
                         <div data-aos='flip-right' className='space-y-6 bg-blue-100 text-white-100 p-6'>
@@ -145,12 +142,9 @@ export default function Home() {
                             <h5 className='md:text-2xl text-lg font-semibold'>
                                 Staking
                             </h5>
-                            <p className='text-white-50'>
+                            <p className='text-white-100'>
                                 Earn passive income with our easy-to-use staking feature. By holding your tokens in a secure wallet, you contribute to the stability of the ShihTzu Inu network and earn USDC rewards.
                             </p>
-                            <div>
-                                <a href='/' className='font-semibold'>Read More ➔</a>
-                            </div>
                         </div>
 
                         <div data-aos='flip-right' className='space-y-6'>
@@ -162,9 +156,6 @@ export default function Home() {
                             <p className='text-white-50'>
                                 Trade your ShihTzu Inu tokens for other cryptocurrencies with our fast, secure, and user-friendly decentralized exchange. Enjoy low fees, fast transactions, and complete control over your investments without intermediaries.
                             </p>
-                            <div>
-                                <a href='/' className='text-blue-100 font-semibold'>Read More ➔</a>
-                            </div>
                         </div>
 
                     </div>
@@ -218,6 +209,28 @@ export default function Home() {
                         </div>
 
                     </div>
+
+                    <div id='about' className="lg:flex block justify-between items-center gap-x-16 lg:pt-16 py-5">
+
+                        <div data-aos="fade-right" className="">
+                            <h2 className='md:text-5xl text-3xl font-bold text-black-100'>
+                                About us
+                            </h2>
+                        </div>
+
+                        <div data-aos="fade-left" className="lg:w-1/2 w-full md:mt-0 mt-6">
+
+                            <p className='py-6 lg:leading-loose opacity-80 lg:text-lg'>
+                                Our token symbol, Shi-TZU, represents our love for dogs and
+                                our commitment to creating a fun and engaging investment
+                                experience. We believe that investing in cryptocurrencies
+                                should be exciting and enjoyable, which is why we've designed
+                                the ShihTzu Inu project to be both fun and rewarding.
+                            </p>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
@@ -226,7 +239,7 @@ export default function Home() {
             <div id='working' className="mt-8">
 
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
-                    <div className="lg:flex block justify-center items-center gap-x-16 py-16">
+                    <div className="lg:flex block justify-center items-center gap-x-16">
 
                         <div data-aos="zoom-in" className="lg:w-1/3">
                             <img src={work} alt="Logo" className='lg:w-full w-8/12 flex mx-auto' />

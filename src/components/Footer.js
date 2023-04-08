@@ -29,7 +29,7 @@ export default function Footer() {
 
           </div>
 
-          <div className='flex justify-center gap-6 items-center lg:mt-0 mt-6'>
+          <div id='contact' className='flex justify-center gap-6 items-center lg:mt-0 mt-6'>
 
             <a href='https://twitter.com/ShihTzu_Inu1'>
               <img src={twitter} alt="Twitter" className='' />
