@@ -31,11 +31,11 @@ export default function Footer() {
 
           <div className='flex justify-center gap-6 items-center lg:mt-0 mt-6'>
 
-            <a href='/'>
+            <a href='https://twitter.com/ShihTzu_Inu1'>
               <img src={twitter} alt="Twitter" className='' />
             </a>
 
-            <a href='/'>
+            <a href='https://t.me/ShihTzuInu_ARB'>
               <img src={telegram} alt="Facebook" className='' />
             </a>
 

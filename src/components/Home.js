@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import Footer from './Footer'
 import Menu from './Menu'
 import f_1 from '../assets/f_1.png';
 import f_2 from '../assets/f_2.png';
+import f_3 from '../assets/f_3.png';
 import ab_1 from '../assets/ab_1.png';
 import ab_2 from '../assets/ab_2.png';
 import ab_3 from '../assets/ab_3.png';
@@ -19,7 +20,6 @@ import token from '../assets/token.png';
 import p_1 from '../assets/p_1.png';
 import p_2 from '../assets/p_2.png';
 import p_3 from '../assets/p_3.png';
-import p_4 from '../assets/p_4.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Accordion from './Accordion';
@@ -36,20 +36,20 @@ export default function Home() {
 
     const accordionData = [
         {
-            title: 'What are the SH TZU?',
-            content: `As a creative agency we work with you to develop solutions to address your brand needs. That includes various aspects of brand planning and strategy, marketing and design.`
+            title: 'What are SH-TZU?',
+            content: `SH-TZU is the symbol for ShihTzu Inu, a deflationary cryptocurrency project built on the Arbitrum chain. It offers holders a range of utilities, including Text to NFT Bot, staking, and a decentralized exchange.`
         },
         {
-            title: 'How do i get SH-TZU?',
-            content: `As a creative agency we work with you to develop solutions to address your brand needs. That includes various aspects of brand planning and strategy, marketing and design.`
+            title: 'How do I get SH-TZU?',
+            content: `You can get SH-TZU by purchasing it on a cryptocurrency exchange that supports the token. SH-TZU is currently available on SushiSwap and other exchanges. You can also earn SH-TZU by staking your tokens or participating in the ShihTzu Inu community.`
         },
         {
-            title: 'How can we buy?',
-            content: `As a creative agency we work with you to develop solutions to address your brand needs. That includes various aspects of brand planning and strategy, marketing and design.`
+            title: 'How can we buy SH-TZU on SushiSwap?',
+            content: `To buy SH-TZU on SushiSwap, you'll first need to have an Ethereum wallet and some Ethereum (ETH) to cover the transaction fees. Then, simply visit the SushiSwap exchange, search for SH-TZU, and swap your ETH for SH-TZU. Make sure to double-check the transaction details before confirming your trade.`
         },
         {
             title: 'Who are the team behind the project?',
-            content: `As a creative agency we work with you to develop solutions to address your brand needs. That includes various aspects of brand planning and strategy, marketing and design.`
+            content: `The ShihTzu Inu project is run by a team of experienced cryptocurrency professionals who are passionate about creating a fun and engaging investment experience. Our team is dedicated to building a strong and vibrant community of SH-TZU holders, and we're committed to transparency, security, and innovation. To learn more about our team, visit our website and check out our team page.`
         }
     ];
 
@@ -65,21 +65,22 @@ export default function Home() {
                     <div className="lg:flex justify-between items-center gap-y-12 py-12">
                         <div className="lg:w-1/2">
 
-                            <h2 data-aos='fade-up' className='md:text-6xl text-3xl font-montserat font-bold text-black-100 uppercase'>
-                                Jorem ipsum dolor sit amet, consectetur
+                            <h2 data-aos='fade-up' className='md:text-5xl text-3xl font-montserat font-bold text-black-100 uppercase'>
+                                The Revolutionary Token on Arbitrum Chain, with 2% USDC Rewards for Holders!
                             </h2>
 
-                            <p data-aos='fade-out' className='pt-8 pb-6 leading-loose'>
-                                Robot technology is faster with the latest systems that make it possible
-                                your partner and ready to serve your needs. EnttTer email to get product launch information
-                            </p>
+                            <div className="mt-6 flex items-center gap-x-8">
+                                <a href="https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0xd3C66E09A66EB90879768e81971ce2C3f83cEEeF">
+                                    <button className="bg-red-50 hover:bg-white-100 border-2 border-red-50 rounded-lg py-3 lg:px-8 px-4 font-semibold text-white-100 hover:text-black-100">
+                                        Buy Now
+                                    </button>
+                                </a>
 
-                            <div className="mt-6 py-2 pl-6 pr-1 lg:w-8/12 bg-pink-50 flex items-center justify-between rounded-2xl border-2 border-blue-25">
-                                <input type="email" placeholder="Enter your email address" id="email" required="" className="focus:ring-0 focus:outline-none w-full bg-pink-50 placeholder:text-black-100" />
-
-                                <button className='text-white-100 lg:px-5 px-2 lg:py-3 py-2 bg-blue-25 rounded-2xl'>
-                                    Submit
-                                </button>
+                                <a href="https://www.dextools.io/app/en/arbitrum/pair-explorer/0x983C8D727b3971864Ab2b54624A1A39bAa50D061">
+                                    <button className="bg-red-50 hover:bg-white-100 border-2 border-red-50 rounded-lg py-3 lg:px-8 px-4 font-semibold text-white-100 hover:text-black-100">
+                                        Chart ↗
+                                    </button>
+                                </a>
                             </div>
 
                         </div>
@@ -95,54 +96,6 @@ export default function Home() {
             <div className='bg-pink-100 h-28'>
             </div>
 
-            {/* features section */}
-
-            <div id='features' className="lg:px-20 px-5">
-                <div className='container mx-auto'>
-
-                    <div className="lg:flex block justify-between items-center gap-x-12 lg:py-16 py-6">
-
-                        <div data-aos="fade-left" className="lg:w-1/3 w-full">
-
-                            <h2 className='md:text-4xl text-3xl font-semibold text-black-100 capitalize'>
-                                updated main<br></br>
-                                features
-                            </h2>
-
-                        </div>
-
-                        <div className="lg:flex items-center justify-between md:mt-0 mt-12 gap-x-12 lg:space-y-0 space-y-6">
-                            <div className='flex items-center gap-x-6'>
-                                <img data-aos='zoom-in' src={f_1} alt='' className='rotate'></img>
-                                <div data-aos='fade-up'>
-                                    <h3 className='md:text-3xl text-xl font-semibold text-black-100'>
-                                        Lorem Ipsum
-                                    </h3>
-                                    <p className='text-white-50'>
-                                        Lorem ipsum hollar deor
-                                        here
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className='flex items-center gap-x-6'>
-                                <img data-aos='zoom-in' src={f_2} alt='' className='rotate'></img>
-                                <div data-aos='fade-up'>
-                                    <h3 className='md:text-3xl text-xl font-semibold text-black-100'>
-                                        Lorem Ipsum
-                                    </h3>
-                                    <p className='text-white-50'>
-                                        Lorem ipsum hollar deor
-                                        here
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
             {/* about us section */}
 
             <div id='about' className="lg:px-20 px-5">
@@ -152,15 +105,18 @@ export default function Home() {
 
                         <div data-aos="fade-right" className="">
                             <h2 className='md:text-5xl text-3xl font-bold text-black-100'>
-                                About Us
+                                Utilities
                             </h2>
                         </div>
 
                         <div data-aos="fade-left" className="lg:w-1/2 w-full md:mt-0 mt-6">
 
                             <p className='py-6 lg:leading-loose opacity-80 lg:text-lg'>
-                                Torem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Torem ipsum dolor sit amet, consectetur adipiscing elit.
+                                With these utilities, ShihTzu Inu offers a range of innovative
+                                features that set it apart from other cryptocurrency projects.
+                                Whether you're an artist, investor, or crypto enthusiast,
+                                ShihTzu Inu has something to offer.
+                                Join us today and discover the many benefits of the ShihTzu Inu project
                             </p>
 
                         </div>
@@ -173,10 +129,10 @@ export default function Home() {
                             <img src={ab_1} alt="Logo" className='' />
 
                             <h5 className='md:text-2xl text-lg font-semibold text-black-100'>
-                                Lorem Ipsum
+                                Text to NFT Bot:
                             </h5>
                             <p className='text-white-50'>
-                                Torem ipsum dolor sit amet, consectetur adipiscing elit.Torem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Convert your messages into unique NFTs with our Text to NFT Bot. Express yourself through blockchain technology and turn your words into digital art that can be traded on the blockchain.
                             </p>
                             <div>
                                 <a href='/' className='text-blue-100 font-semibold'>Read More ➔</a>
@@ -187,10 +143,10 @@ export default function Home() {
                             <img src={ab_2} alt="Logo" className='' />
 
                             <h5 className='md:text-2xl text-lg font-semibold'>
-                                Lorem Ipsum
+                                Staking
                             </h5>
                             <p className='text-white-50'>
-                                Torem ipsum dolor sit amet, consectetur adipiscing elit.Torem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Earn passive income with our easy-to-use staking feature. By holding your tokens in a secure wallet, you contribute to the stability of the ShihTzu Inu network and earn USDC rewards.
                             </p>
                             <div>
                                 <a href='/' className='font-semibold'>Read More ➔</a>
@@ -201,10 +157,10 @@ export default function Home() {
                             <img src={ab_3} alt="Logo" className='' />
 
                             <h5 className='md:text-2xl text-lg font-semibold text-black-100'>
-                                Lorem Ipsum
+                                DEX
                             </h5>
                             <p className='text-white-50'>
-                                Torem ipsum dolor sit amet, consectetur adipiscing elit.Torem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Trade your ShihTzu Inu tokens for other cryptocurrencies with our fast, secure, and user-friendly decentralized exchange. Enjoy low fees, fast transactions, and complete control over your investments without intermediaries.
                             </p>
                             <div>
                                 <a href='/' className='text-blue-100 font-semibold'>Read More ➔</a>
@@ -213,6 +169,55 @@ export default function Home() {
 
                     </div>
 
+                </div>
+            </div>
+
+
+            {/* features section */}
+
+            <div id='features' className="lg:px-20 px-5">
+                <div className='container mx-auto'>
+
+                    <div className="lg:flex block justify-between items-center gap-x-12 lg:py-16 py-6">
+
+                        <div data-aos="fade-left" className="lg:w-1/3 w-full">
+
+                            <h2 className='md:text-4xl text-3xl font-semibold text-black-100 capitalize'>
+                                TOKENOMICS
+                            </h2>
+
+                        </div>
+
+                        <div className="lg:flex items-center justify-between md:mt-0 mt-12 gap-x-8 lg:space-y-0 space-y-6">
+                            <div className='flex items-center gap-x-6'>
+                                <img data-aos='zoom-in' src={f_1} alt='' className='rotate'></img>
+                                <div data-aos='fade-up'>
+                                    <h3 className='md:text-2xl text-xl font-semibold text-black-100'>
+                                        USDC REWARDS
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div className='flex items-center gap-x-6'>
+                                <img data-aos='zoom-in' src={f_2} alt='' className='rotate'></img>
+                                <div data-aos='fade-up'>
+                                    <h3 className='md:text-2xl text-xl font-semibold text-black-100'>
+                                        Marketing
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div className='flex items-center gap-x-6'>
+                                <img data-aos='zoom-in' src={f_3} alt='' className='rotate'></img>
+                                <div data-aos='fade-up'>
+                                    <h3 className='md:text-2xl text-xl font-semibold text-black-100'>
+                                        LP
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
@@ -230,15 +235,11 @@ export default function Home() {
                         <div data-aos="fade-left" className="lg:w-1/2 w-full md:mt-0 mt-12">
 
                             <h2 className='md:text-5xl text-3xl font-bold text-black-100'>
-                                See how everything
-                                Works!
+                                WHY ARBITRUM:
                             </h2>
                             <p className='py-6 lg:leading-loose opacity-80 lg:text-lg'>
-                                Torem ipsum dolor sit amet, consectetur adipiscing elit.Torem ipsum dolor sit amet, consectetur adipiscing elit.Torem ipsum dolor sit amet, consectetur adipiscing elit.Torem ipsum dolor sit amet,
+                                Our token is built on the Arbitrum chain, a layer 2 scaling solution for Ethereum. This means that the [Token Name] is fast and cheap to use, with near-instant transaction times and low fees. As more people adopt the Arbitrum chain, the demand for our token is likely to increase, driving up its value even further.
                             </p>
-
-                            <a href='/' className='font-semibold text-blue-100'>Read More ➔</a>
-
                         </div>
 
                     </div>
@@ -254,7 +255,7 @@ export default function Home() {
                 className="lg:py-8 py-5 lg:px-20 px-5 container mx-auto"
             >
                 <h3 className="md:text-5xl text-2xl font-poppins font-semibold text-center capitalize">
-                    TOKENOMICS
+                    TOKEN DISTRIBUTION
                 </h3>
 
                 <div className='lg:flex items-center justify-between gap-8 space-y-4 pt-12'>
@@ -288,7 +289,7 @@ export default function Home() {
                         <img src={token} alt="Logo" className='' />
                     </div>
 
-                    <div  data-aos='fade-left' className='space-y-8'>
+                    <div data-aos='fade-left' className='space-y-8'>
 
                         <div>
                             <p className='text-lg pb-2 lg:text-right'>
@@ -359,13 +360,16 @@ export default function Home() {
                                     data-aos="flip-right"
                                     className="border border-white-50 p-5 lg:w-72 bg-gradient"
                                 >
-                                    <h5 className="text-2xl py-4 font-semibold text-white-100">Q1 2023</h5>
+                                    <h5 className="text-xl py-4 font-semibold text-white-100 capitalize">phase 1:
+                                        Launch and
+                                        Community Building</h5>
 
-                                    <ul className="space-y-4 text-white-100">
-                                        <li>Release website and logo</li>
-                                        <li>Grow community</li>
-                                        <li>Launch the project</li>
-                                        <li>Social media setup</li>
+                                    <ul className="list-disc p-4 text-white-100">
+                                        <li>Launch of ShihTzu Inu on the Arbitrum chain</li>
+                                        <li>Implementation of the Text to NFT Bot</li>
+                                        <li>Launch of staking feature</li>
+                                        <li>Launch of a decentralized exchange</li>
+                                        <li>Development of the ShihTzu Inu community through social media, Discord, and other channels</li>
                                     </ul>
                                 </div>
                             </div>
@@ -387,13 +391,15 @@ export default function Home() {
                                     data-aos="flip-right"
                                     className="border border-white-50 p-5 lg:w-72 bg-gradient"
                                 >
-                                    <h5 className="text-2xl py-4 font-semibold text-white-100">Q2 2023</h5>
+                                    <h5 className="text-xl py-4 font-semibold text-white-100 capitalize">Phase 2:
+                                        Marketing and
+                                        Partnership
+                                        Development</h5>
 
-                                    <ul className="space-y-4 text-white-100">
-                                        <li>Release website and logo</li>
-                                        <li>Grow community</li>
-                                        <li>Launch the project</li>
-                                        <li>Social media setup</li>
+                                    <ul className="list-disc p-4 text-white-100">
+                                        <li>Implementation of a comprehensive marketing strategy to increase awareness of the project</li>
+                                        <li>Partnership development with other cryptocurrency projects, influencers, and media outlets</li>
+                                        <li>Expansion of the ShihTzu Inu community through targeted outreach and engagement</li>
                                     </ul>
                                 </div>
                             </div>
@@ -415,13 +421,15 @@ export default function Home() {
                                     data-aos="flip-right"
                                     className="border border-white-50 p-5 lg:w-72 bg-gradient"
                                 >
-                                    <h5 className="text-2xl py-4 font-semibold text-white-100">Q3 2023</h5>
+                                    <h5 className="text-xl py-4 font-semibold text-white-100 capitalize">Phase 3:
+                                        Charitable Giving
+                                        and Social Impact</h5>
 
                                     <ul className="space-y-4 text-white-100">
-                                        <li>Release website and logo</li>
-                                        <li>Grow community</li>
-                                        <li>Launch the project</li>
-                                        <li>Social media setup</li>
+                                        <li>Launch of the anonymous and secure donation feature</li>
+                                        <li>Partnership with charitable organizations to support social impact projects and causes</li>
+                                        <li>Expansion of the Text to NFT Bot to include charity auctions and fundraisers</li>
+                                        <li>Community-driven initiatives to support social impact causes</li>
                                     </ul>
                                 </div>
                             </div>
@@ -443,13 +451,15 @@ export default function Home() {
                                     data-aos="flip-right"
                                     className="border border-white-50 p-5 lg:w-72 bg-gradient"
                                 >
-                                    <h5 className="text-2xl py-4 font-semibold text-white-100">Q4 2023</h5>
+                                    <h5 className="text-xl py-4 font-semibold text-white-100 capitalize">Phase 4:
+                                        Innovation and
+                                        Expansion</h5>
 
-                                    <ul className="space-y-4 text-white-100">
-                                        <li>Release website and logo</li>
-                                        <li>Grow community</li>
-                                        <li>Launch the project</li>
-                                        <li>Social media setup</li>
+                                    <ul className="text-white-100 list-disc p-4">
+                                        <li>Implementation of new utilities and features, such as yield farming and NFT marketplaces</li>
+                                        <li>Expansion of the ShihTzu Inu ecosystem through strategic partnerships and collaborations</li>
+                                        <li>Integration with other blockchain networks and platforms to increase accessibility and reach</li>
+                                        <li>Ongoing development and improvement of the ShihTzu Inu project based on community feedback and engagement.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -470,10 +480,21 @@ export default function Home() {
 
                 <div className='flex items-center justify-center gap-8 flex-wrap lg:mt-12 mt-6'>
 
-                    <img data-aos='zoom-in' src={p_1} alt="Logo" className='' />
-                    <img data-aos='zoom-in' src={p_2} alt="Logo" className='' />
-                    <img data-aos='zoom-in' src={p_3} alt="Logo" className='' />
-                    <img data-aos='zoom-in' src={p_4} alt="Logo" className='' />
+                    <div className='border-4 border-red-50 p-3 rounded-2xl'>
+                        <img data-aos='zoom-in' src={p_1} alt="Logo" className='' />
+                    </div>
+
+                    <div className='border-4 border-red-50 p-5 rounded-2xl'>
+                        <img data-aos='zoom-in' src={p_2} alt="Logo" className='' />
+                    </div>
+
+                    <div className='border-4 border-red-50 p-3 rounded-2xl'>
+                        <img data-aos='zoom-in' src={p_3} alt="Logo" className='' />
+                    </div>
+
+                    <div className='border-4 border-red-50 p-5 rounded-2xl'>
+                        <p className='text-2xl'><span className='font-semibold'>DX</span> LOCK</p>
+                    </div>
 
                 </div>
             </div>
@@ -481,7 +502,7 @@ export default function Home() {
             {/* faq section */}
 
             <div
-                id="faqs"
+                id="faq"
                 className="lg:py-8 py-5 lg:px-8 px-5 container mx-auto text-black-100"
             >
                 <div className='lg:w-8/12 flex flex-col justify-center mx-auto'>
