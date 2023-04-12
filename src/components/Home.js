@@ -7,16 +7,9 @@ import f_3 from '../assets/f_3.png';
 import ab_1 from '../assets/ab_1.png';
 import ab_2 from '../assets/ab_2.png';
 import ab_3 from '../assets/ab_3.png';
-import tok_1 from '../assets/tok_1.png';
-import tok_2 from '../assets/tok_2.png';
-import tok_3 from '../assets/tok_3.png';
-import tok_4 from '../assets/tok_4.png';
-import tok_5 from '../assets/tok_5.png';
-import tok_6 from '../assets/tok_6.png';
 import pattern from '../assets/pattern.png';
 import top from '../assets/top.png';
 import work from '../assets/work.png';
-import token from '../assets/token.png';
 import p_1 from '../assets/p_1.png';
 import p_2 from '../assets/p_2.png';
 import p_3 from '../assets/p_3.png';
@@ -242,7 +235,7 @@ export default function Home() {
                     <div className="lg:flex block justify-center items-center gap-x-16">
 
                         <div data-aos="zoom-in" className="lg:w-1/3">
-                            <img src={work} alt="Logo" className='lg:w-full w-8/12 flex mx-auto' />
+                            <img src={work} alt="Logo" className='lg:w-8/12 w-6/12 flex mx-auto' />
                         </div>
 
                         <div data-aos="fade-left" className="lg:w-1/2 w-full md:mt-0 mt-12">
@@ -258,77 +251,6 @@ export default function Home() {
                     </div>
 
                 </div>
-
-            </div>
-
-            {/* TOKENOMICS */}
-
-            <div
-                id="contract"
-                className="lg:py-8 py-5 lg:px-20 px-5 container mx-auto"
-            >
-                <h3 className="md:text-5xl text-2xl font-poppins font-semibold text-center capitalize">
-                    TOKEN DISTRIBUTION
-                </h3>
-
-                <div className='lg:flex items-center justify-between gap-8 space-y-4 pt-12'>
-
-                    <div data-aos='fade-right' className='space-y-8'>
-
-                        <div>
-                            <p className='text-lg pb-2'>
-                                Marketing: 25%
-                            </p>
-                            <img src={tok_1} alt="Logo" className='' />
-                        </div>
-
-                        <div>
-                            <p className='text-lg pb-2'>
-                                Bussiness Development: 25%
-                            </p>
-                            <img src={tok_2} alt="Logo" className='' />
-                        </div>
-
-                        <div>
-                            <p className='text-lg pb-2'>
-                                Product Development: 10%
-                            </p>
-                            <img src={tok_3} alt="Logo" className='' />
-                        </div>
-
-                    </div>
-
-                    <div data-aos='zoom-in'>
-                        <img src={token} alt="Logo" className='' />
-                    </div>
-
-                    <div data-aos='fade-left' className='space-y-8'>
-
-                        <div>
-                            <p className='text-lg pb-2 lg:text-right'>
-                                Reserve: 10%
-                            </p>
-                            <img src={tok_4} alt="Logo" className='' />
-                        </div>
-
-                        <div>
-                            <p className='text-lg pb-2 lg:text-right'>
-                                Reserve: 10%
-                            </p>
-                            <img src={tok_5} alt="Logo" className='' />
-                        </div>
-
-                        <div>
-                            <p className='text-lg pb-2 lg:text-right'>
-                                Token Sale: 20%
-                            </p>
-                            <img src={tok_6} alt="Logo" className='' />
-                        </div>
-
-                    </div>
-
-                </div>
-
 
             </div>
 
